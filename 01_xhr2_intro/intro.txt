@@ -1,0 +1,37 @@
+
+ 	XMLHttpRequest ver 2 신규 기능.
+ 		- 다양한 이벤트 지원.
+ 		- 크로스 브라우징 지원
+ 		- 파일 업로드 가능.
+ 	 	
+ 	메소드 
+ 		- open()
+ 		- send()
+ 		
+ 	프로퍼티
+ 		- upload
+ 			- 업로드 정보 처리.
+ 			- 이벤트 
+ 				- onprogress 
+ 				- onload
+ 			
+ 	이벤트.
+ 	
+ 		- onreadystatechange(Event)
+ 			요청 응답처리 (기존 XHR1에서 지원)
+ 		- onloadend(ProgressEvent)
+ 			요청이 성공적이든 오류던 요청이 완료되었을때 실행.
+ 			
+ 		- onload(ProgressEvent)
+ 			요청이 진행중일 때 진행 상황
+ 		- onloadstart(ProgressEvent)
+ 			요청 시작.
+ 		- onload(ProgressEvent)
+ 			요청이 성공적으로 완료.
+ 		- onprogress(ProgressEvent)
+ 			요청이 진행중일 때 진행 상황	
+ 		- onerror(ProgressEvent)
+ 			요청이 실패했을때.
+ 		- onabort(ProgressEvent)
+ 			요청 취소.
+ 
